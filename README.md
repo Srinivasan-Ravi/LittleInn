@@ -1,2 +1,5 @@
-# LittleInn
-Explore a World of Wonder: Interactive Stories for Young Readers!!
+# SDP
+
+-> Clone this Repo
+-> npm i
+-> npm run dev
