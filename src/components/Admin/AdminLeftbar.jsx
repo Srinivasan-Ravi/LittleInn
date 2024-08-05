@@ -33,15 +33,18 @@ const handleHome=()=>{
     ];
 
     return (
-        <div className='h-screen w-1/6 flex justify-center items-center flex-col shadow-sm shadow-primary pt-10'>
+        <div className='h-screen w-1/6 flex justify-center items-center flex-col shadow-sm shadow-primary pt-2'>
              <div id="logo" className="flex items-center cursor-pointer" onClick={handleHome}>
-        <img
-          src="https://ik.imagekit.io/SrinivasanRavi/Home/LittleInn/FavIcon.png?updatedAt=1722142981113"
+             <img
+          src="https://ik.imagekit.io/SrinivasanRavi/Home/LittleInn/2.png?updatedAt=1722589914943"
           alt="Logo"
-          className="w-12 h-12 items-start top-0 z-0-0 justify-start"
+          className="w-8 h-auto"
         />
+        <h2 className="text-xl text-center font-bold">LittleInn</h2>
       </div>
+      <hr></hr>
             <div className='h-[90%] w-full flex flex-col justify-start items-center gap-0'>
+                <br></br>
                 {
                     AdminLinks.map((data, index) => (
                         <NavLink key={index} to={data.link} className='p-5  font-bold mt-1 w-full'>

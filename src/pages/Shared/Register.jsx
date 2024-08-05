@@ -18,6 +18,7 @@ import {
   TabsTrigger,
 } from '@/components/ui/tabs';
 import { useNavigate } from 'react-router-dom';
+import RetroGrid from '@/components/magicui/retro-grid';
 
 const Register = () => {
   const navigate = useNavigate();
@@ -233,6 +234,7 @@ const Register = () => {
           Registration successful!
         </div>
       )}
+       <RetroGrid/>
     </div>
   );
 };

@@ -20,6 +20,7 @@ const UserTopbar = () => {
     </button>
     
             </div>
+            <hr></hr>
         </div>
     );
 }

@@ -32,10 +32,11 @@ const Navbar = () => {
         onClick={handleHome}
       >
         <img
-          src="https://ik.imagekit.io/SrinivasanRavi/Home/LittleInn/FavIcon.png?updatedAt=1722142981113"
+          src="https://ik.imagekit.io/SrinivasanRavi/Home/LittleInn/2.png?updatedAt=1722589914943"
           alt="Logo"
           className="w-12 h-auto"
         />
+        <h2 className="text-xl text-center font-bold">LittleInn</h2>
       </div>
       <div className="flex items-center">
         <ul className="flex space-x-4">
@@ -88,9 +89,9 @@ const Navbar = () => {
             </a>
           </li>
           <li className="items-center outline-none forced-color-adjust-none">
-            <ModeToggle />
           </li>
         </ul>
+            <ModeToggle />
       </div>
     </div>
   );
