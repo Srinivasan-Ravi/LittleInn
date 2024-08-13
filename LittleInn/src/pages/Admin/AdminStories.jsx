@@ -114,19 +114,18 @@ const AdminStories = () => {
     setVisibleStories(interviews.length);
   };
 
+
   const handleInputChange = (e) => {
     const { id, value } = e.target;
     setNewStory((prev) => ({ ...prev, [id]: value }));
   };
 
   const handleAddStory = async() => {
-    // const response = await axios.post("http://localhost:7777/stories/addstory",{
-    //   name:newStory.name,
-    //   description:newStory.description,
-    //   author:newStory.name,
-    //   story_journal:newStory.additionalInfo,
-    //   user_id: 1,
-    // })
+    const response = await axios.post("http://localhost:7777/stories/addstory",{
+      name:newStory.name,
+      description:newStory.description,
+      storyJournal:newStory.additionalInfo,
+    })
     if (editingStory) {
       setInterviews(
         interviews.map((story) =>
@@ -141,6 +140,7 @@ const AdminStories = () => {
     setOpen(false);
   };
 
+
   const handleEditStory = (story) => {
     setEditingStory(story);
     setNewStory(story);
@@ -150,6 +150,7 @@ const AdminStories = () => {
   const handleDeleteStory = (name) => {
     setInterviews(interviews.filter((story) => story.name !== name));
   };
+
 
   return (
     <>
